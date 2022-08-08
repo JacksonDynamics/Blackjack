@@ -12,7 +12,7 @@ function startGame() {
     sumEl.textContent = `Sum: ${sum}`;
     cardsEl.textContent = `Cards: ${`${firstCard} ${secondCard}`}`
 
-    if (sum <= 15) {
+    if (sum <= 20) {
         message = "Do you want to draw a new card?";
     }
     else if (sum === 21) {
@@ -28,5 +28,8 @@ function startGame() {
 }
 
 function newCard() {
-    console.log("Drawing a new card from the deck!")
+    let card = Math.floor(Math.random() * (11 - 2 + 1)) + 2;
+    sum += card;
+    startGame();
+    cardsEl.textContent += card
 }

@@ -20,7 +20,7 @@ h1 {
     font-style:italic;
 }
 
-#startGame, #newCard {
+button {
     background-color: goldenrod;
     border: none;
     border-radius: 3px;
@@ -32,8 +32,3 @@ h1 {
     margin: 4px;
 }
 
-#buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
