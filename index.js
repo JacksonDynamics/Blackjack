@@ -4,38 +4,24 @@ let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
-
+let messageEl = document.getElementById("message-el");
+let sumEl = document.querySelector("#sum-el");
 
 function startGame() {
-    if (sum <= 20) {
-        message = "Do you want to draw a new card? 🙂";
+    sumEl.textContent = `Sum: ${sum}`;
+    
+    if (sum <= 15) {
+        message = "Do you want to draw a new card?";
     }
     else if (sum === 21) {
         hasBlackJack = true;
-        message = "Wahoo! You got a blackjack! 🥳";
+        message = "Wahoo! You got a blackjack!";
     }
     else {
         isAlive = false;
-        message = "You're out of the game! 😭";
+        message = "You're out of the game!";
     }
     
-    // Cash out
-    console.log(message)
+    messageEl.textContent = message;
+    
 }
-
-
-<<<<<<< HEAD
-=======
-console.log(firstCard,secondCard)
-console.log(sum)
-
-if (sum < 21) {
-    console.log("Do you want to draw a new card? 🙂")
-}
-else if (sum === 21) {
-    console.log("Wahoo! You got a blackjack! 🥳")
-}
-else {
-    console.log("You're out of the game! 😭")
-}
->>>>>>> bf6affb2a24dd35f86511c730a3a63c4c01b14a5
