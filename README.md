@@ -1,6 +1,6 @@
 # A digital Blackjack Game
 
-### Using skills of HTML/CSS and JavaScript
+#### Using skills of HTML/CSS and JavaScript
 
 <img src="images/Blackjack.png" width="400px" />
 
